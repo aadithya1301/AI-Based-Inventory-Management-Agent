@@ -1,0 +1,5 @@
+{
+  "name": "AI Inventory Agent",
+  "description": "An AI-powered inventory management system with predictive demand forecasting and natural language queries.",
+  "requestFramePermissions": []
+}
