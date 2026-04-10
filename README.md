@@ -1,20 +1,52 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# InvAgent AI
 
-# Run and deploy your AI Studio app
+InvAgent AI is a professional, AI-powered inventory management system designed to streamline stock tracking, demand forecasting, and inventory analysis through a conversational interface.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/08b15f1f-3d84-48a3-8fff-5cf1f3782cdc
+- **AI Inventory Assistant**: A sophisticated agent powered by **Groq (Llama 3.3)** and **LangChain**. It can list items, check low stock, provide detailed product info, and predict demand.
+- **Interactive Dashboard**: A clean, modern UI built with **React**, **Tailwind CSS**, and **shadcn/ui** for real-time inventory monitoring.
+- **Smart Demand Prediction**: Integrated machine learning model (Linear Regression) that analyzes historical trends to forecast next-day demand.
+- **Local Persistence**: All inventory changes are automatically saved to your browser's `localStorage`, ensuring data is preserved across sessions.
+- **Low Stock Alerts**: Visual indicators and automated agent checks for items falling below their defined thresholds.
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend**: React 19, Vite, TypeScript
+- **Styling**: Tailwind CSS 4, Lucide Icons, Framer Motion
+- **AI/LLM**: LangChain, Groq API (Llama 3.3 70B)
+- **Data/ML**: Simple Statistics (Linear Regression)
+- **Components**: shadcn/ui
 
+## 📋 Prerequisites
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+To use the AI Assistant, you need a **Groq API Key**.
+1. Get your key from the [Groq Console](https://console.groq.com/).
+2. Add it to your environment variables as `GROQ_API_KEY`.
+
+## Getting Started
+
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+
+## Agent Capabilities
+
+You can ask the agent:
+- "What items are currently in stock?"
+- "Which items are running low?"
+- "Predict the demand for tomorrow."
+- "Tell me more about the item 'Rice'."
+- "How many unique products do we have?"
+
