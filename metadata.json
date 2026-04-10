@@ -1,0 +1,5 @@
+{
+  "name": "AI Inventory Management Agent",
+  "description": "A professional AI-powered inventory agent that tracks stock, counts products, and predicts demand using machine learning.",
+  "requestFramePermissions": []
+}
